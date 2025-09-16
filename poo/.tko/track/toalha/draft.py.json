@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-39-12",
+            "content": "@@ -5,24 +5,25 @@\n t (%22\n-oi%22)%0A%0A%0ATowel = %7B%0A%0A%0A%7D\n+Minha toalha %C3%A9 rosa%22)\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-09-16_20-03-10",
+            "content": "@@ -1,148 +1,28 @@\n-class Towel:%0A    def __init__(self):%0A        self.color = %22red%22%0A        self.size = %22G%22%0A        self.wetness = 0%0A%0At\n+print (%22oi%22)%0A%0A%0AT\n owel = \n-Towel()%0Aprint(towel.color)\n+%7B%0A%0A%0A%7D\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-09-16_20-08-07",
+            "content": "@@ -145,41 +145,4 @@\n lor)\n-%0Aprint(towel.size)%0Aprint(towel.color)\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-09-16_20-08-42",
+            "content": "@@ -5,17 +5,16 @@\n s Towel:\n- \n %0A    def\n@@ -31,45 +31,10 @@\n self\n-, color: str, size: str): #construtor\n+):\n %0A   \n@@ -60,19 +60,8 @@\n red%22\n- #atributos\n %0A   \n@@ -125,67 +125,9 @@\n wel(\n-%22green%22, %22G%22) #objetos%0Atoalhas = Towel(%22red%22, %22M%22) #objetos\n+)\n %0Apri\n@@ -172,16 +172,14 @@\n t(towel.\n-wetness\n+color\n )\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-09-16_20-16-55",
+            "content": "@@ -87,21 +87,21 @@\n color = \n-color\n+%22red%22\n  #atribu\n@@ -124,20 +124,19 @@\n .size = \n-size\n+%22G%22\n %0A       \n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-09-16_20-17-14",
+            "content": "@@ -157,110 +157,8 @@\n  = 0\n-%0A    %0A    def __str__(self):%0A        return f%22color:%7Bself.color%7D, tam:%7Bself.size%7D, hum:%7Bself.wetness%7D%22\n %0A%0Ato\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-09-16_20-22-38",
+            "content": "@@ -392,18 +392,4 @@\n ess)\n-%0A%0Aprint(towel)\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-09-16_20-23-01",
+            "content": "@@ -334,50 +334,8 @@\n etos\n-%0A%0Aprint(towel.color)%0Atowel.color = %22White%22\n %0Apri\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-09-16_20-23-58",
+            "content": "class Towel: \n    def __init__(self, color: str, size: str): #construtor\n        self.color = color #atributos\n        self.size = size\n        self.wetness = 0\n    \n    def __str__(self):\n        return f\"color:{self.color}, tam:{self.size}, hum:{self.wetness}\"\n\ntowel = Towel(\"green\", \"G\") #objetos\ntoalhas = Towel(\"red\", \"M\") #objetos\n\nprint(towel.color)\ntowel.color = \"White\"\nprint(towel.color)\nprint(towel.size)\nprint(towel.wetness)\n\nprint(towel)",
+            "lines": "19"
+        }
+    ]
+}
