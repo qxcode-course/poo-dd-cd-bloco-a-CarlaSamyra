@@ -5,10 +5,7 @@ filter:
 - BLOCO_B
 version: 0.0.1
 database: database
-expanded:
-- configuracao-e-aquecimento
-- campanha-principal
-- bloco_b-primeiras-classes
+expanded: []
 tasks: {}
 flags:
   quests: 0
