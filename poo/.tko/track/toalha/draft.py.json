@@ -47,8 +47,108 @@
         },
         {
             "label": "2025-09-22_15-24-47",
-            "content": "class Towel: \n    def __init__(self, color: str, size: str): #construtor\n        self.color = color #atributos\n        self.size = size\n        self.wetness = 0\n    \n    def __str__(self):\n        return f\"color:{self.color}, tam:{self.size}, hum:{self.wetness}\"\n\ntowel = Towel(\"green\", \"G\") #objetos\ntoalhas = Towel(\"red\", \"M\") #objetos\n\nprint(towel.color)\ntowel.color = \"Blue\"\nprint(towel.color)\nprint(towel.size)\nprint(towel.wetness)\n\nprint(towel)",
+            "content": "@@ -185,18 +185,8 @@\n lf):\n- #toString\n %0A   \n",
             "lines": "19"
+        },
+        {
+            "label": "2025-09-22_15-39-08",
+            "content": "@@ -157,80 +157,8 @@\n  = 0\n-%0A%0A    def dry(self, amount: int) -%3E None:%0A        self.wetness += amount\n %0A   \n@@ -307,11 +307,8 @@\n etos\n- - \n %0Atoa\n@@ -441,16 +441,16 @@\n tness)%0A%0A\n+\n print(to\n@@ -457,49 +457,4 @@\n wel)\n-%0Aprint(toalhas)%0Atoalhas.dry(3)%0Aprint(toalhas)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-09-22_15-41-58",
+            "content": "@@ -229,200 +229,8 @@\n ount\n-%0A%0A    def getMaxWetness (self) -%3E int :%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20%0A        if self.size == %22G%22:%0A            return 30\n %0A   \n@@ -577,33 +577,4 @@\n has)\n-%0Aprint(toalhas.getMaxWetness)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-09-22_15-44-38",
+            "content": "@@ -229,113 +229,8 @@\n ount\n-%0A        if self.wetness %3E= self.getMaxWetness():%0A            print(%22toalha encharcada%22)%0A            self\n %0A%0A  \n@@ -262,16 +262,17 @@\n ) -%3E int\n+ \n :%0A      \n@@ -422,34 +422,8 @@\n  30%0A\n-        return 0%0A        %0A\n     \n@@ -797,7 +797,5 @@\n ness\n-()\n )\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-09-22_15-52-09",
+            "content": "@@ -334,37 +334,8 @@\n self\n-.wetness = self.getMaxWetness\n %0A%0A  \n@@ -607,9 +607,11 @@\n n f%22\n-C\n+col\n or:%7B\n@@ -627,15 +627,11 @@\n r%7D, \n-T\n+t\n am\n-anho\n :%7Bse\n@@ -644,15 +644,11 @@\n e%7D, \n-Umidade\n+hum\n :%7Bse\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-53-17",
+            "content": "@@ -913,18 +913,17 @@\n has.dry(\n-20\n+3\n )%0Aprint(\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-53-26",
+            "content": "@@ -359,18 +359,16 @@\n xWetness\n-()\n %0A%0A    de\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-53-50",
+            "content": "@@ -915,17 +915,17 @@\n has.dry(\n-1\n+2\n 0)%0Aprint\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-54-48",
+            "content": "@@ -698,21 +698,21 @@\n ness%7D%22%0A%0A\n-minha\n+towel\n  = Towel\n@@ -717,12 +717,13 @@\n el(%22\n-Rosa\n+green\n %22, %22\n@@ -735,16 +735,18 @@\n objetos \n+- \n %0Atoalhas\n@@ -782,29 +782,29 @@\n %0A%0Aprint(\n-minha\n+towel\n .color)%0A\n minha.co\n@@ -795,21 +795,21 @@\n .color)%0A\n-minha\n+towel\n .color =\n@@ -822,21 +822,21 @@\n %22%0Aprint(\n-minha\n+towel\n .color)%0A\n@@ -841,21 +841,21 @@\n )%0Aprint(\n-minha\n+towel\n .size)%0Ap\n@@ -859,21 +859,21 @@\n )%0Aprint(\n-minha\n+towel\n .wetness\n@@ -885,13 +885,13 @@\n int(\n-minha\n+towel\n )%0Apr\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-56-07",
+            "content": "@@ -167,14 +167,11 @@\n def \n-secar \n+dry\n (sel\n@@ -258,29 +258,29 @@\n %3E= self.\n-maximaUmidade\n+getMaxWetness\n ():%0A    \n@@ -350,46 +350,46 @@\n elf.\n-maximaUmidade()%0A%0A    def maximaUmidade\n+getMaxWetness()%0A%0A    def getMaxWetness\n  (se\n@@ -949,20 +949,20 @@\n has.\n-maximaUmidade\n+getMaxWetness\n ())\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-58-32",
+            "content": "@@ -911,21 +911,19 @@\n toalhas.\n-secar\n+dry\n (10)%0Apri\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-58-49",
+            "content": "@@ -776,16 +776,56 @@\n bjetos%0A%0A\n+print(minha.color)%0Aminha.color = %22Blue%22%0A\n print(mi\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_15-59-34",
+            "content": "@@ -759,16 +759,11 @@\n el(%22\n-Vermelho\n+red\n %22, %22\n@@ -776,16 +776,75 @@\n bjetos%0A%0A\n+print(minha.color)%0Aprint(minha.size)%0Aprint(minha.wetness)%0A%0A\n print(mi\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-22_15-59-53",
+            "content": "@@ -809,17 +809,16 @@\n oalhas)%0A\n-%0A\n toalhas.\n@@ -831,23 +831,8 @@\n 10)%0A\n-minha.secar(5)%0A\n prin\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-22_16-00-20",
+            "content": "@@ -892,33 +892,4 @@\n e())\n-%0Aprint(minha.maximaUmidade())\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-09-22_16-00-45",
+            "content": "@@ -810,17 +810,33 @@\n alhas)%0A%0A\n-%0A\n+toalhas.secar(10)\n %0Aminha.s\n@@ -843,17 +843,16 @@\n ecar(5)%0A\n-%0A\n print(to\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-09-22_16-01-05",
+            "content": "@@ -810,16 +810,18 @@\n alhas)%0A%0A\n+%0A%0A\n minha.se\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-22_16-01-21",
+            "content": "@@ -814,26 +814,8 @@\n s)%0A%0A\n-toalhas.secar(10)%0A\n minh\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-09-22_16-01-32",
+            "content": "@@ -863,22 +863,8 @@\n as)%0A\n-print(minha)%0A%0A\n prin\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-22_16-01-54",
+            "content": "@@ -107,43 +107,8 @@\n utos\n- - define o estado da minha toalha \n %0A   \n@@ -578,24 +578,29 @@\n  0%0A        %0A\n+    %0A\n     def __st\n@@ -704,206 +704,236 @@\n s%7D%22%0A\n-    %0A    def isDry (self) -%3E bool :%0A        return self.wetness == 0%0A    %0A    #def wringOut (self) -%3E None :%0A        #return self.wetness = 0%0A%0Adef main (): #2 fun%C3%A7%C3%A3o principal%0A%0A%0Amain() #1. c%C3%B3digo inicia\n+%0Aminha = Towel(%22Rosa%22, %22G%22) #objetos %0Atoalhas = Towel(%22Vermelho%22, %22M%22) #objetos%0A%0Aprint(minha)%0Aprint(toalhas)%0A%0Atoalhas.secar(10)%0Aminha.secar(5)%0A%0Aprint(toalhas)%0Aprint(minha)%0A%0Aprint(toalhas.maximaUmidade())%0Aprint(minha.maximaUmidade())\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-22_16-38-40",
+            "content": "class Towel: \n    def __init__(self, color: str, size: str): #construtor\n        self.color = color #atributos - define o estado da minha toalha \n        self.size = size\n        self.wetness = 0\n\n    def secar (self, amount: int) -> None:\n        self.wetness += amount\n        if self.wetness >= self.maximaUmidade():\n            print(\"toalha encharcada\")\n            self.wetness = self.maximaUmidade()\n\n    def maximaUmidade (self) -> int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\":\n            return 20\n        if self.size == \"G\":\n            return 30\n        return 0\n        \n    def __str__(self): #toString\n        return f\"Cor:{self.color}, Tamanho:{self.size}, Umidade:{self.wetness}\"\n    \n    def isDry (self) -> bool :\n        return self.wetness == 0\n    \n    #def wringOut (self) -> None :\n        #return self.wetness = 0\n\ndef main (): #2 fun\u00e7\u00e3o principal\n\n\nmain() #1. c\u00f3digo inicia",
+            "lines": "34"
         }
     ]
 }
