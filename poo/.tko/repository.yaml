@@ -5,7 +5,9 @@ filter:
 - BLOCO_B
 version: 0.0.1
 database: database
-expanded: []
+expanded:
+- campanha-principal
+- bloco_b-primeiras-classes
 tasks: {}
 flags:
   quests: 0
