@@ -11,7 +11,7 @@ towel = Towel("green", "G") #objetos
 toalhas = Towel("red", "M") #objetos
 
 print(towel.color)
-towel.color = "White"
+towel.color = "Blue"
 print(towel.color)
 print(towel.size)
 print(towel.wetness)
