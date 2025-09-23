@@ -8,11 +8,12 @@ database: database
 expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  enxugar: '{rate:20}'
 flags:
-  quests: 0
+  quests: 1
   tracks: 0
-  tasks: 0
-  graph: 0
+  tasks: 1
+  graph: 1
   xray: 0
-index: toalha
+index: enxugar
