@@ -9,7 +9,7 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  enxugar: '{rate:20}'
+  enxugar: '{rate:90}'
 flags:
   quests: 1
   tracks: 0

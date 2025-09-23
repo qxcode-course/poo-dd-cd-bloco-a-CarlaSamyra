@@ -56,7 +56,10 @@ def main (): #2 função principal
             if toalha.isDry():
                 print ("sim")
             else:
-                print("não")
+                print("nao")
+
+        elif args[0] == "torcer":
+            toalha.wringOut()
 
         else:
             print ("fail: comando inválido")
