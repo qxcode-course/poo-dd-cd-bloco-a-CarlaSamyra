@@ -9,11 +9,11 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  enxugar: '{rate:90}'
+  enxugar: '{rate:100}'
 flags:
   quests: 1
   tracks: 0
   tasks: 1
   graph: 1
   xray: 0
-index: enxugar
+index: animal

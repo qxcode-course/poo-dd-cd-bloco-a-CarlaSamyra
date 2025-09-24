@@ -17,7 +17,7 @@ class Towel:
         self.wetness += amount
         if self.wetness >= self.getMaxWetness():
             print("toalha encharcada")
-            self.wetness = self.getMaxWetness()
+            self.wetness = self.getMaxWetness()	
         
     def __str__(self): #toString
         return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
@@ -65,5 +65,8 @@ def main (): #2 função principal
             print ("fail: comando inválido")
 
 main() #1. código inicia
+
+
+
 
     
