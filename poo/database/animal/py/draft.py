@@ -7,7 +7,21 @@ class Animal:
     def __str__ (self):
         return f"{self.species}:{self.age}:{self.sound}"
     
+    def ageBy (self, amount: int):
+        self.age += amount
+        if self.age >= 4:
+            print (f"warning: {self.species} morreu")
+            self.age = 4
+        
+    def makeSound (self):
+        if self.age == 0 :
+            print ("---")
+        elif self.age >= 4:
+            print ("RIP")
+        else:
+            print (self.sound)
 
+        
 def main():
     animal = Animal ("", "")
 
@@ -27,9 +41,14 @@ def main():
         elif args[0] == "show":
             print (animal)
 
+        elif args[0] == "grow":
+            amount: int = int(args[1])
+            animal.ageBy(amount)
 
-
-
-
+        elif args[0] == "noise":
+            animal.makeSound()
+        
+        else: 
+            print ("fail: comando inválido")
 
 main()
