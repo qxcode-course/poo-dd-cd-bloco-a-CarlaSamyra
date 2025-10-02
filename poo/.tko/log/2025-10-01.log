@@ -1,0 +1,23 @@
+2025-10-01 00:04:07, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 08:14:43, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 08:14:45, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:35
+2025-10-01 08:15:01, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:35
+2025-10-01 08:17:06, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 08:18:31, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 08:18:32, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:34
+2025-10-01 11:13:59, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 11:14:01, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:34
+2025-10-01 11:14:16, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:33
+2025-10-01 11:14:48, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:35
+2025-10-01 23:06:21, SELF, v:1, k:toalha, rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:300
+2025-10-01 23:06:33, SELF, v:1, k:animal, rate:100, guide:sim, other:sim, alone:9, study:180
+2025-10-01 23:06:34, MOVE, v:1, k:carro, mode:PICK
+2025-10-01 23:06:35, MOVE, v:1, k:carro, mode:BACK
+2025-10-01 23:06:43, SELF, v:1, k:carro, rate:100, human:sim, other:sim, alone:8, study:240
+2025-10-01 23:06:44, MOVE, v:1, k:enxugar, mode:PICK
+2025-10-01 23:07:12, MOVE, v:1, k:enxugar, mode:BACK
+2025-10-01 23:07:53, SELF, v:1, k:enxugar, rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:300
+2025-10-01 23:07:55, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 23:07:57, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-01 23:12:16, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-01 23:12:24, MOVE, v:1, k:calculadora, mode:PICK

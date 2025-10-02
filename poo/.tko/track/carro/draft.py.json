@@ -1,0 +1,594 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-29_15-43-41",
+            "content": "@@ -1,591 +0,0 @@\n-class Car:%0A    def __init__ (self, pas: int, km: int, gas: int):%0A        self.pas: int = 0 %0A        self.km: int = 0%0A        self.gas: int = 0%0A%0A    def __str__ (self):%0A        return f%22pass:%7Bself.pas%7D, gas:%7Bself.gas%7D, km:%7Bself.km%7D%22%0A    %0A    def pasMax (self, amount: int):%0A        self.pas += amount%0A        if self.pas %3E 2:%0A            print (%22fail, limite de pessoas atingido%22)%0A%0A%0A%0A%0A%0Adef main():%0A    carro = Car (%22%22, %22%22, %22%22) %0A%0A    while True:%0A        line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print (%22$%22 + line)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-29_16-05-19",
+            "content": "@@ -580,65 +580,8 @@\n reak\n-%0A        elif args%5B0%5D == %22show%22:%0A            print(carro)\n %0A%0Ama\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_16-06-36",
+            "content": "@@ -183,17 +183,16 @@\n  f%22pass:\n- \n %7Bself.pa\n@@ -199,17 +199,16 @@\n s%7D, gas:\n- \n %7Bself.ga\n@@ -214,17 +214,16 @@\n as%7D, km:\n- \n %7Bself.km\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-29_16-06-50",
+            "content": "@@ -380,35 +380,8 @@\n o%22)%0A\n-            self.pas = 2%0A%0A%0A\n %0A%0A%0A%0A\n@@ -640,115 +640,8 @@\n rro)\n-%0A        elif args%5B0%5D == %22enter%22:%0A            amount : int = int (args%5B1%5D)%0A            carro.pasMax(amount)\n %0A%0Ama\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-29_16-15-17",
+            "content": "@@ -722,16 +722,31 @@\n t : int \n+= int (args%5B1%5D)\n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-15-38",
+            "content": "@@ -748,16 +748,22 @@\n .pasMax(\n+amount\n )%0A%0Amain(\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-15-48",
+            "content": "@@ -697,16 +697,42 @@\n enter%22:%0A\n+            amount : int %0A\n         \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-15-59",
+            "content": "@@ -701,34 +701,8 @@\n r%22:%0A\n-            amount : int %0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-29_16-16-38",
+            "content": "@@ -715,25 +715,23 @@\n   amount\n+ \n : int \n-= 0\n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-17-15",
+            "content": "@@ -727,9 +727,9 @@\n t = \n-1\n+0\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-17-40",
+            "content": "@@ -697,16 +697,44 @@\n enter%22:%0A\n+            amount: int = 1%0A\n         \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_16-22-49",
+            "content": "@@ -249,24 +249,37 @@\n pasMax (self\n+, amount: int\n ):%0A        s\n@@ -293,9 +293,14 @@\n  += \n-1\n+amount\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-29_16-23-22",
+            "content": "@@ -327,17 +327,17 @@\n t (%22fail\n-:\n+,\n  limite \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-29_16-24-06",
+            "content": "@@ -710,56 +710,8 @@\n x()%0A\n-        elif args%5B0%5D == %22leave%22:%0A            %0A%0A%0A\n %0Amai\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-29_16-26-33",
+            "content": "@@ -755,25 +755,8 @@\n     \n-carro.pasMax - 1%0A\n %0A%0A%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-09-29_16-27-01",
+            "content": "@@ -760,16 +760,19 @@\n arro.pas\n+Max\n  - 1%0A%0A%0A%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-29_16-27-34",
+            "content": "@@ -387,55 +387,8 @@\n = 2%0A\n-    %0A    def leave (self):%0A        self.pas - 1\n %0A%0A%0A%0A\n@@ -761,15 +761,15 @@\n rro.\n-leave()\n+pas - 1\n %0A%0A%0A%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-09-29_16-28-32",
+            "content": "@@ -808,17 +808,14 @@\n rro.\n-pasMax(-1\n+leave(\n )%0A%0A%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-09-29_16-29-28",
+            "content": "@@ -435,86 +435,8 @@\n - 1%0A\n-        if self.pas == 0:%0A            print (%22fail: nao ha ninguem no carro%22)%0A\n %0A%0A%0A%0A\n@@ -808,29 +808,18 @@\n rro.\n-leave()%0A%0A            \n+pasMax(-1)\n %0A%0A%0A%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-09-29_16-34-41",
+            "content": "@@ -417,27 +417,16 @@\n %0A       \n- self.pas =\n  self.pa\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-09-29_16-35-04",
+            "content": "@@ -402,32 +402,64 @@\n f leave (self):%0A\n+        self.pas = self.pas - 1%0A\n         if self.\n@@ -524,49 +524,8 @@\n o%22)%0A\n-        self.pas = self.pas - 1%0A        %0A\n %0A%0A%0A%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-09-29_16-35-46",
+            "content": "@@ -414,40 +414,8 @@\n f):%0A\n-        self.pas = self.pas - 1%0A\n     \n@@ -488,16 +488,57 @@\n carro%22)%0A\n+        self.pas = self.pas - 1%0A        %0A\n %0A%0A%0A%0A%0A%0Ade\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-29_16-37-50",
+            "content": "@@ -524,33 +524,8 @@\n o%22)%0A\n-            self.pas = 0%0A\n %0A%0A%0A%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-09-29_16-38-19",
+            "content": "@@ -466,9 +466,10 @@\n pas \n-%3C\n+==\n  0:%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-29_16-38-47",
+            "content": "@@ -431,10 +431,20 @@\n pas \n--\n =\n+ self.pas -\n  1%0A \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-29_16-39-53",
+            "content": "@@ -539,137 +539,8 @@\n  0%0A%0A\n-    def gasMax (self, amount: int):%0A        self.gas += amount%0A        if self.gas %3E 100:%0A            self.gas == self.gasMax()%0A%0A\n %0A%0A%0A%0A\n@@ -919,75 +919,8 @@\n e()%0A\n-        elif args%5B0%5D == %22fuel%22:%0A            amount: int (args%5B1%5D)%0A%0A\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-29_16-44-20",
+            "content": "@@ -1095,22 +1095,16 @@\n  amount:\n- int =\n  int (ar\n@@ -1114,35 +1114,8 @@\n 1%5D)%0A\n-            carro.gasMax()%0A\n %0A%0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_16-44-51",
+            "content": "@@ -1141,22 +1141,16 @@\n .gasMax(\n-amount\n )%0A%0A%0A    \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-29_16-45-07",
+            "content": "@@ -601,15 +601,8 @@\n ount\n- == 100\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-29_16-47-09",
+            "content": "@@ -656,19 +656,29 @@\n .gas == \n-100\n+self.gasMax()\n %0A%0A%0A%0A%0A%0A%0Ad\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-29_16-47-39",
+            "content": "@@ -665,230 +665,8 @@\n 00%0A%0A\n-    def drive (self, distance: int):%0A        self.km += distance%0A        if self.pas == 0:%0A            print (%22fail: n%C3%A3o h%C3%A1 ningu%C3%A9m no carro%22)%0A        elif self.gas == 0:%0A            print (%22fail: tanque vazio%22)%0A        %0A%0A\n %0A%0A%0A%0A\n@@ -1150,117 +1150,8 @@\n nt)%0A\n-        elif args%5B0%5D == %22drive%22:%0A            distance: int = int (args%5B1%5D)%0A            carro.gasMax(distance)\n %0A%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-29_16-52-11",
+            "content": "@@ -1376,17 +1376,16 @@\n         \n-#\n elif arg\n@@ -1412,17 +1412,16 @@\n         \n-#\n  distanc\n@@ -1459,20 +1459,20 @@\n     \n-#\n carro.\n-drive\n+gasMax\n (dis\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_16-53-17",
+            "content": "@@ -598,16 +598,22 @@\n  amount \n+== 100\n %0A       \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_16-53-54",
+            "content": "@@ -877,16 +877,21 @@\n       %0A%0A\n+%0A%0A%0A%0A%0A\n def main\n@@ -1369,16 +1369,120 @@\n %0A       \n+ #elif args%5B0%5D == %22drive%22:%0A           # distance: int = int (args%5B1%5D)%0A            #carro.drive(distance)\n %0A%0A      \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_16-57-29",
+            "content": "@@ -769,36 +769,36 @@\n nt (%22fail: n\n-ao ha\n+%C3%A3o h%C3%A1\n  ningu\n-e\n+%C3%A9\n m no carro%22)\n@@ -1368,109 +1368,8 @@\n     \n- elif args%5B0%5D == %22drive%22:%0A            distance: int = int (args%5B1%5D)%0A            carro.drive(distance)\n %0A%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-29_16-59-58",
+            "content": "@@ -871,35 +871,8 @@\n o%22)%0A\n-        self.gas - self.km%0A\n     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_17-02-38",
+            "content": "@@ -802,39 +802,8 @@\n o%22)%0A\n-            self.km - distance%0A\n     \n@@ -871,39 +871,8 @@\n o%22)%0A\n-            self.km - distance%0A\n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_17-03-34",
+            "content": "@@ -684,32 +684,60 @@\n distance: int):%0A\n+        self.km += distance%0A\n         if self.\n@@ -738,32 +738,32 @@\n  self.pas == 0:%0A\n-\n             prin\n@@ -802,39 +802,50 @@\n o%22)%0A            \n-return \n+self.km - distance\n %0A        elif se\n@@ -906,24 +906,8 @@\n     \n-        return %0A\n     \n@@ -910,34 +910,33 @@\n         self.km \n-+=\n+-\n  distance%0A      \n@@ -933,24 +933,42 @@\n nce%0A        \n+self.gas - self.km\n %0A        %0A%0Ad\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-09-29_17-05-50",
+            "content": "@@ -911,36 +911,8 @@\n nce%0A\n-        self.gas - self.km%0A%0A\n     \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-09-29_17-06-56",
+            "content": "@@ -925,17 +925,16 @@\n lf.gas -\n-=\n  self.km\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_17-07-30",
+            "content": "@@ -696,64 +696,8 @@\n t):%0A\n-        self.km += distance%0A        self.gas -= self.km%0A\n     \n@@ -878,16 +878,72 @@\n  return \n+%0A        self.km += distance%0A        self.gas -= self.km\n %0A%0A      \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_17-08-21",
+            "content": "@@ -720,16 +720,44 @@\n istance%0A\n+        self.gas -= self.km%0A\n         \n@@ -939,35 +939,8 @@\n rn %0A\n-        self.gas -= self.km\n %0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-09-29_17-08-37",
+            "content": "@@ -684,32 +684,60 @@\n distance: int):%0A\n+        self.km += distance%0A\n         if self.\n@@ -911,36 +911,8 @@\n rn %0A\n-        self.km += distance%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-09-29_17-08-52",
+            "content": "@@ -655,21 +655,16 @@\n == 100%0A%0A\n-    %0A\n     def \n@@ -696,48 +696,8 @@\n t):%0A\n-        distancia = self.gas - distance%0A\n     \n@@ -883,106 +883,8 @@\n rn %0A\n-        elif self.gas %3C 100:%0A            print (%22fail: tanque vazio apos andar %7Bdistancia%7D km.%22)%0A%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-09-29_17-14-06",
+            "content": "@@ -922,16 +922,115 @@\n   return\n+ %0A        elif self.gas %3C 100:%0A            print (%22fail: tanque vazio apos andar %7Bdistancia%7D km.%22)%0A\n %0A       \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-29_17-14-26",
+            "content": "@@ -857,17 +857,17 @@\n elf.gas \n-%3C\n+=\n = 0:%0A   \n@@ -908,33 +908,8 @@\n o%22)%0A\n-            self.gas = 0%0A\n     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-29_17-16-19",
+            "content": "@@ -701,103 +701,8 @@\n t):%0A\n-        if self.gas == 0:%0A            print (%22fail: tanque vazio%22)%0A            return%0A        %0A\n     \n@@ -725,16 +725,27 @@\n self.gas\n+ - distance\n %0A       \n@@ -882,17 +882,16 @@\n  print (\n-f\n %22fail: t\n@@ -905,34 +905,8 @@\n azio\n- apos andar %7Bdistancia%7D km\n %22)%0A \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-09-29_17-22-02",
+            "content": "@@ -775,32 +775,70 @@\n          return%0A\n+        %0A        distancia = self.gas%0A\n         if self.\n@@ -839,32 +839,32 @@\n  self.pas == 0:%0A\n-\n             prin\n@@ -931,70 +931,21 @@\n     \n-%0A        distancia = self.gas - distance%0A%0A        if distancia\n+elif self.gas\n  %3C= \n@@ -999,24 +999,25 @@\n  andar %7B\n-self.gas\n+distancia\n %7D km%22)%0A \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-29_17-27-23",
+            "content": "@@ -1133,36 +1133,16 @@\n         \n-self.km += distance%0A\n %0A       \n@@ -1143,16 +1143,17 @@\n        %0A\n+%0A\n def main\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_15-35-50",
+            "content": "@@ -1061,32 +1061,60 @@\n          return%0A\n+        self.km += distance%0A\n         self.gas\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_15-35-58",
+            "content": "@@ -1086,36 +1086,8 @@\n elf.\n-km += distance%0A        self.\n gas \n@@ -1105,16 +1105,35 @@\n         \n+self.km += distance\n %0A%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_15-36-07",
+            "content": "@@ -1066,55 +1066,14 @@\n     \n-self.km += distance%0A            return%0A        \n+return\n %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_15-37-39",
+            "content": "@@ -1073,25 +1073,24 @@\n f.km += \n-(\n distance\n  - self.\n@@ -1085,20 +1085,8 @@\n ance\n- - self.gas)\n %0A   \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_15-38-14",
+            "content": "@@ -1081,18 +1081,17 @@\n (distanc\n-ia\n+e\n  - self.\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_15-38-44",
+            "content": "@@ -1072,16 +1072,29 @@\n lf.km +=\n+ (distancia -\n  self.ga\n@@ -1094,16 +1094,17 @@\n self.gas\n+)\n %0A       \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_15-39-32",
+            "content": "@@ -1174,35 +1174,16 @@\n         \n-self.km += self.gas\n %0A%0A      \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_15-39-52",
+            "content": "@@ -1046,24 +1046,56 @@\n elf.gas = 0%0A\n+            self.km += self.gas%0A\n             \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_15-39-59",
+            "content": "@@ -1133,16 +1133,44 @@\n  self.km\n+%0A        self.km += self.gas\n %0A%0A      \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_15-40-06",
+            "content": "@@ -648,16 +648,17 @@\n lf.gas =\n+=\n  100%0A%0A  \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_15-42-11",
+            "content": "@@ -1069,32 +1069,60 @@\n return%0A        %0A\n+        self.km += distance%0A\n         self.gas\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-07-10",
+            "content": "@@ -1081,36 +1081,8 @@\n    %0A\n-        self.km += distance%0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_16-07-25",
+            "content": "@@ -1103,19 +1103,17 @@\n  distanc\n-ia \n+e\n %0A       \n@@ -1134,17 +1134,16 @@\n elf.km%0A%0A\n-%0A\n         \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-08-31",
+            "content": "@@ -1103,17 +1103,19 @@\n  distanc\n-e\n+ia \n %0A       \n@@ -1135,33 +1135,16 @@\n self.km%0A\n-        %0A        \n %0A%0A      \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-13-22",
+            "content": "@@ -1090,21 +1090,20 @@\n    self.\n-gas -\n+km +\n = distan\n@@ -1105,16 +1105,44 @@\n istance%0A\n+        self.gas -= self.km%0A\n         \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_16-15-19",
+            "content": "@@ -1110,37 +1110,8 @@\n nce%0A\n-        self.km += distance %0A\n     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-15-48",
+            "content": "@@ -1108,24 +1108,46 @@\n tance%0A      \n+  self.km += distance \n %0A        %0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_16-20-00",
+            "content": "@@ -932,37 +932,8 @@\n ance\n-%0A        self.gas -= distance\n %0A%0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_16-20-44",
+            "content": "@@ -928,16 +928,45 @@\n distance\n+%0A        self.gas -= distance\n %0A%0A      \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-09-30_16-20-58",
+            "content": "@@ -1110,35 +1110,8 @@\n nce%0A\n-        self.km = self.gas%0A\n     \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_16-24-47",
+            "content": "@@ -1124,26 +1124,24 @@\n lf.km = \n-distancia \n+self.gas\n %0A      %0A\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-09-30_16-25-01",
+            "content": "@@ -1127,25 +1127,27 @@\n km = distanc\n-e\n+ia \n %0A      %0A    \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-09-30_16-25-42",
+            "content": "@@ -1136,19 +1136,8 @@\n ance\n- + self.gas\n %0A   \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-09-30_16-26-18",
+            "content": "@@ -1135,25 +1135,31 @@\n tance + \n-distancia\n+self.gas%0A      \n %0A       \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-09-30_16-27-43",
+            "content": "@@ -1106,16 +1106,55 @@\n istance%0A\n+        self.km = distance + distancia%0A\n         \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_16-41-51",
+            "content": "@@ -1118,26 +1118,8 @@\n     \n-self.km = distance\n %0A   \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-43-17",
+            "content": "@@ -1128,26 +1128,16 @@\n m = \n-self.km + self.gas\n+distance\n %0A   \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-45-53",
+            "content": "@@ -1106,16 +1106,53 @@\n istance%0A\n+        self.km = self.km + self.gas%0A\n         \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-47-33",
+            "content": "@@ -1118,26 +1118,8 @@\n     \n-self.km = distance\n %0A%0A  \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-48-17",
+            "content": "@@ -932,46 +932,8 @@\n ance\n-%0A        self.km = distance + self.gas\n %0A%0A  \n@@ -1114,16 +1114,34 @@\n         \n+self.km = distance\n %0A%0A      \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-49-19",
+            "content": "@@ -929,32 +929,61 @@\n istance%0A        \n+self.km = distance + self.gas\n %0A%0A        if dis\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-50-09",
+            "content": "@@ -928,16 +928,24 @@\n distance\n+%0A       \n  %0A%0A     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-51-47",
+            "content": "@@ -1095,11 +1095,13 @@\n elf.\n-km \n+gas -\n = di\n@@ -1106,17 +1106,16 @@\n distance\n- \n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-52-57",
+            "content": "@@ -1094,17 +1094,16 @@\n self.km \n-+\n = distan\n@@ -1104,16 +1104,17 @@\n distance\n+ \n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-53-37",
+            "content": "@@ -1046,24 +1046,43 @@\n elf.gas = 0%0A\n+            return%0A\n         %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-54-20",
+            "content": "@@ -1054,50 +1054,8 @@\n = 0%0A\n-            self.gas -= distance%0A        %0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_16-55-00",
+            "content": "@@ -1054,29 +1054,24 @@\n = 0%0A        \n-%0A    \n     self.gas\n@@ -1075,32 +1075,50 @@\n gas -= distance%0A\n+        %0A        %0A\n         self.km \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_16-55-21",
+            "content": "@@ -1058,35 +1058,45 @@\n         \n+%0A\n     \n-return%0A        \n+    self.gas -= distance\n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-56-57",
+            "content": "@@ -1094,16 +1094,17 @@\n self.km \n++\n = distan\n@@ -1109,19 +1109,8 @@\n ance\n- - self.gas\n %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_16-58-08",
+            "content": "@@ -1082,37 +1082,8 @@\n    %0A\n-        self.gas -= distance%0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_17-00-00",
+            "content": "@@ -1123,17 +1123,16 @@\n self.km \n-+\n = distan\n@@ -1125,32 +1125,43 @@\n lf.km = distance\n+ - self.gas\n %0A        %0A%0A     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_17-01-27",
+            "content": "@@ -1046,25 +1046,24 @@\n elf.gas = 0%0A\n-%0A\n             \n@@ -1107,24 +1107,57 @@\n istance%0A    \n+    self.km += distance%0A        %0A\n %0A        %0Ade\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_17-02-33",
+            "content": "@@ -892,18 +892,24 @@\n     \n-if\n+%0A       \n  distanc\n e %3E \n@@ -908,11 +908,12 @@\n tanc\n-e %3E\n+ia =\n  sel\n@@ -917,29 +917,38 @@\n self.gas\n-:%0A   \n+ - distance %0A%0A\n         \n  distanc\n@@ -931,32 +931,34 @@\n tance %0A%0A        \n+if\n  distancia = sel\n@@ -952,27 +952,21 @@\n stancia \n+%3C\n = \n-self.gas \n+0:\n %0A       \n@@ -1046,24 +1046,25 @@\n elf.gas = 0%0A\n+%0A\n             \n@@ -1073,25 +1073,8 @@\n turn\n-%0A%0A       %0A       \n %0A   \n@@ -1125,40 +1125,8 @@\n     \n-distancia = self.gas - distance \n %0Adef\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_18-59-12",
+            "content": "@@ -1087,24 +1087,44 @@\n    %0A        \n+self.gas -= distance\n %0A    %0A      \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_18-59-33",
+            "content": "@@ -998,25 +998,24 @@\n  andar %7B\n-distancia\n+self.gas\n %7D km%22)%0A \n@@ -1061,23 +1061,16 @@\n urn%0A\n-       \n %0A       \n  sel\n@@ -1057,32 +1057,83 @@\n  return%0A%0A       \n+%0A       %0A        %0A        %0A    %0A        distancia =\n  self.gas -= dis\n@@ -1127,17 +1127,16 @@\n lf.gas -\n-=\n  distanc\n@@ -1136,20 +1136,16 @@\n distance\n-%0A   \n  %0Adef ma\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-00-44",
+            "content": "@@ -1055,56 +1055,14 @@\n     \n-self.km = distancia %0A            return%0A        \n+return\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_19-01-33",
+            "content": "@@ -1064,25 +1064,27 @@\n km = distanc\n-e\n+ia \n %0A           \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_19-02-04",
+            "content": "@@ -1043,32 +1043,63 @@\n = 0%0A            \n+self.km = distance%0A            \n return%0A        %0A\n@@ -1105,35 +1105,16 @@\n %0A       \n- self.km = distance\n %0A       \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_19-02-24",
+            "content": "@@ -1035,24 +1035,43 @@\n elf.gas = 0%0A\n+            return%0A\n         %0A   \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-09-30_19-03-30",
+            "content": "@@ -1078,19 +1078,8 @@\n ance\n- + self.gas\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_19-05-14",
+            "content": "@@ -1065,13 +1065,11 @@\n elf.\n-gas -\n+km \n = di\n@@ -1074,16 +1074,27 @@\n distance\n+ + self.gas\n %0A       \n@@ -1091,35 +1091,37 @@\n as%0A        self.\n-km \n+gas -\n = distance + sel\n@@ -1110,35 +1110,24 @@\n  -= distance\n- + self.gas\n %0A    %0Adef ma\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_19-05-41",
+            "content": "@@ -1035,147 +1035,15 @@\n elf.\n-km = distance + distancia %0A            self.gas = 0%0A            %0A        elif distance %3C self.gas:%0A            self.km = distance%0A%0A        \n+gas = 0\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-09-30_19-07-56",
+            "content": "@@ -1163,32 +1163,41 @@\n tance%0A%0A        %0A\n+        %0A\n         self.gas\n@@ -1209,16 +1209,54 @@\n istance%0A\n+        self.km = distance + self.gas%0A\n     %0Adef\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-09-30_19-09-23",
+            "content": "@@ -1162,16 +1162,54 @@\n stance%0A%0A\n+        %0A        self.gas -= distance%0A\n     %0Adef\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-10-45",
+            "content": "@@ -1083,35 +1083,16 @@\n gas = 0%0A\n-            return%0A\n         \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_19-12-20",
+            "content": "@@ -1115,32 +1115,34 @@\n        %0A        \n+el\n if distance %3C se\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_19-12-35",
+            "content": "@@ -1151,41 +1151,8 @@\n as:%0A\n-            self.gas -= distance%0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_19-13-29",
+            "content": "@@ -1045,16 +1045,28 @@\n istance \n++ distancia \n %0A       \n@@ -1180,16 +1180,46 @@\n istance%0A\n+            self.km = distance\n %0A%0A    %0Ad\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-15-18",
+            "content": "@@ -1036,24 +1036,25 @@\n lf.km = \n-self.gas\n+distance \n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-15-36",
+            "content": "@@ -1040,29 +1040,16 @@\n m = \n-distance + distancia \n+self.gas\n %0A   \n@@ -1167,28 +1167,16 @@\n istance%0A\n-            \n %0A%0A    %0Ad\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-15-52",
+            "content": "@@ -1180,16 +1180,28 @@\n istance%0A\n+            \n %0A%0A    %0Ad\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-16-02",
+            "content": "@@ -1045,16 +1045,28 @@\n istance \n++ distancia \n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_19-16-22",
+            "content": "@@ -1082,32 +1082,45 @@\n          return%0A\n+            %0A\n         if dista\n@@ -1172,41 +1172,14 @@\n nce%0A\n+%0A%0A\n     \n-        self.km = distance %0A%0A\n %0Adef\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_21-24-02",
+            "content": "@@ -1049,19 +1049,8 @@\n nce \n-+ distancia\n %0A   \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_21-24-37",
+            "content": "@@ -1014,16 +1014,59 @@\n a%7D km%22)%0A\n+            self.km = distance + distancia%0A\n         \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-09-30_21-30-58",
+            "content": "@@ -1159,99 +1159,8 @@\n ce %0A\n-            return%0A        if distancia + self.km == 60:%0A            self.km == distancia %0A\n %0A%0Ade\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-30_21-32-31",
+            "content": "@@ -1018,52 +1018,8 @@\n m%22)%0A\n-            self.km = distance - distancia %0A\n     \n@@ -1174,16 +1174,88 @@\n  return%0A\n+        if distancia + self.km == 60:%0A            self.km == distancia %0A\n %0A%0Adef ma\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-09-30_21-33-10",
+            "content": "@@ -1040,17 +1040,18 @@\n m = \n-self.km +\n+distance -\n  dis\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-09-30_21-33-50",
+            "content": "class Car:\n    def __init__ (self, pas: int, km: int, gas: int):\n        self.pas: int = 0 \n        self.km: int = 0\n        self.gas: int = 0\n\n    def __str__ (self):\n        return f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\"\n    \n    def pasMax (self):\n        self.pas += 1\n        if self.pas > 2:\n            print (\"fail: limite de pessoas atingido\")\n            self.pas = 2\n    \n    def leave (self):\n        self.pas -= 1\n        if self.pas < 0:\n            print (\"fail: nao ha ninguem no carro\")\n            self.pas = 0\n\n    def gasMax (self, amount: int):\n        self.gas += amount \n        if self.gas > 100:\n            self.gas = 100\n\n    \n    def drive (self, distance: int):\n        if self.gas == 0:\n            print (\"fail: tanque vazio\")\n            return\n        if self.pas == 0:\n            print (\"fail: nao ha ninguem no carro\")\n            return \n        if distance > self.gas:\n            distancia = self.gas \n            print (f\"fail: tanque vazio apos andar {distancia} km\")\n            self.km = self.km + distancia \n            self.gas = 0\n            return\n        if distance < self.gas:\n            self.gas -= distance\n            self.km = distance \n            return\n\n\ndef main():\n    carro = Car (\"\", \"\", \"\") \n\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print (\"$\" + line)\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(carro)\n        elif args[0] == \"enter\":\n            carro.pasMax()\n        elif args[0] == \"leave\":\n            carro.leave()\n        elif args[0] == \"fuel\":\n            amount: int = int (args[1])\n            carro.gasMax(amount)\n        elif args[0] == \"drive\":\n            distance: int = int (args[1])\n            carro.drive(distance)\n\n            \n\n\n\n\nmain()",
+            "lines": "75"
+        }
+    ]
+}
