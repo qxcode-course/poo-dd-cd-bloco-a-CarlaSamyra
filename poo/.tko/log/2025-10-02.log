@@ -1,0 +1,4 @@
+2025-10-02 11:24:29, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 11:49:46, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 11:49:50, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:60
+2025-10-02 11:49:52, MOVE, v:1, k:calculadora, mode:BACK
