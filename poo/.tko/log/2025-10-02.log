@@ -27,3 +27,6 @@
 2025-10-02 14:48:29, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:66
 2025-10-02 14:50:11, MOVE, v:1, k:calculadora, mode:BACK
 >>>>>>> refs/remotes/origin/main
+2025-10-02 11:56:09, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 11:56:13, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:60
+2025-10-02 11:56:15, MOVE, v:1, k:calculadora, mode:BACK
