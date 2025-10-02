@@ -1,4 +1,29 @@
+<<<<<<< HEAD
 2025-10-02 11:24:29, MOVE, v:1, k:calculadora, mode:PICK
 2025-10-02 11:49:46, MOVE, v:1, k:calculadora, mode:PICK
 2025-10-02 11:49:50, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:60
 2025-10-02 11:49:52, MOVE, v:1, k:calculadora, mode:BACK
+=======
+2025-10-02 02:19:32, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 02:19:34, EXEC, v:1, k:calculadora, mode:FULL, rate:9, size:34
+2025-10-02 02:22:38, EXEC, v:1, k:calculadora, mode:FULL, rate:36, size:40
+2025-10-02 02:48:03, MOVE, v:1, k:calculadora, mode:BACK
+2025-10-02 02:51:01, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 02:51:02, EXEC, v:1, k:calculadora, mode:FULL, rate:36, size:48
+2025-10-02 02:51:28, EXEC, v:1, k:calculadora, mode:FULL, rate:36, size:49
+2025-10-02 02:51:39, EXEC, v:1, k:calculadora, mode:FULL, rate:54, size:49
+2025-10-02 02:52:35, EXEC, v:1, k:calculadora, mode:FULL, rate:45, size:51
+2025-10-02 02:53:03, EXEC, v:1, k:calculadora, mode:FULL, rate:63, size:51
+2025-10-02 02:54:09, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:58
+2025-10-02 02:57:35, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:63
+2025-10-02 14:33:22, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-02 14:33:23, EXEC, v:1, k:calculadora, mode:FULL, rate:72
+2025-10-02 14:37:38, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:64
+2025-10-02 14:39:34, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:66
+2025-10-02 14:41:23, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:65
+2025-10-02 14:44:11, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:62
+2025-10-02 14:45:38, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:64
+2025-10-02 14:47:24, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:65
+2025-10-02 14:48:29, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:66
+2025-10-02 14:50:11, MOVE, v:1, k:calculadora, mode:BACK
+>>>>>>> refs/remotes/origin/main
