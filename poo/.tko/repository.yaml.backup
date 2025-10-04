@@ -10,7 +10,7 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:300}'
-  animal: '{rate:100, guide:sim, other:sim, alone:9, study:180}'
+  animal: '{rate:100, alone:9, study:180}'
   carro: '{rate:100, human:sim, other:sim, alone:8, study:240}'
   calculadora: '{rate:100}'
   enxugar: '{rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:300}'
@@ -20,4 +20,4 @@ flags:
   tasks: 1
   graph: 1
   xray: 0
-index: calculadora
+index: animal
