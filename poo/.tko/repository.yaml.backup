@@ -12,7 +12,7 @@ tasks:
   toalha: '{rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:300}'
   animal: '{rate:100, alone:9, study:180}'
   carro: '{rate:100, human:sim, alone:9, study:240}'
-  calculadora: '{rate:100}'
+  calculadora: '{rate:100, other:sim, alone:8, study:120}'
   enxugar: '{rate:100, human:sim, guide:sim, alone:9, study:300}'
 flags:
   quests: 1

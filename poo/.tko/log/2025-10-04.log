@@ -51,3 +51,14 @@
 2025-10-04 23:02:03, SELF, v:1, k:animal, rate:100, alone:9, study:180
 2025-10-04 23:02:16, SELF, v:1, k:carro, rate:100, human:sim, alone:9, study:240
 2025-10-04 23:02:32, SELF, v:1, k:enxugar, rate:100, human:sim, guide:sim, alone:9, study:300
+2025-10-04 23:53:54, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 23:53:55, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:35
+2025-10-04 23:54:55, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:33
+2025-10-04 23:55:42, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:35
+2025-10-04 23:56:45, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 23:58:01, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 23:58:19, MOVE, v:1, k:carro, mode:PICK
+2025-10-04 23:58:23, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-10-04 23:58:24, MOVE, v:1, k:carro, mode:BACK
+2025-10-04 23:58:57, SELF, v:1, k:calculadora, rate:100, other:sim, alone:8, study:120
+2025-10-04 23:59:07, MOVE, v:1, k:calculadora, mode:PICK
