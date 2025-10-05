@@ -21,8 +21,6 @@ class Animal:
         else:
             print (self.sound)
 
-
-
 def main():
     animal = Animal (" ", " ")
     while True:
