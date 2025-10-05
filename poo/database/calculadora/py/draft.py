@@ -1,12 +1,17 @@
-class Calc: 
-    def __init__ (self, batteryMax: int):
-        self.display = 0.00
-        self.battery = 0
+class Calc:
+    def __init__ (self, batteryMax: int ):
         self.batteryMax = batteryMax
-
+        self.display: float = 0.00
+        self.battery: int = 0
+    
     def __str__ (self):
         return f"display = {self.display:.2f}, battery = {self.battery}"
     
+    def charge (self, increment: int):
+        self.battery += increment 
+        if self.battery > self.batteryMax: 
+            self.battery = self.batteryMax
+
     def sum (self, a: float, b: float):
         if self.battery > 0:
             self.display = a + b 
@@ -25,19 +30,23 @@ class Calc:
         else:
             print ("fail: bateria insuficiente")
         
-    
+
 def main():
-    line = input ()
-    args: list[str] = line.split (" ")
-    print ("$" + line)
     while True:
+        line = input()
+        args: list[str] = line.split(" ")
+        print ("$" + line)
+
         if args[0] == "end":
-            break
+            break 
         elif args[0] == "init":
             batteryMax = int(args[1])
             calculadora: Calc = Calc (batteryMax)
         elif args[0] == "show":
-            print (calculadora)
+            print(calculadora)
+        elif args[0] == "charge":
+            increment: int = int(args[1])
+            calculadora.charge(increment)
         elif args[0] == "sum":
             a: float = float(args[1])
             b: float = float(args[2])
@@ -47,7 +56,5 @@ def main():
             num: float = float(args[2])
             calculadora.div(den, num)
         else:
-            return "fail: comando inválido"
-        
-        
+            print("fail: comando inválido")
 main()
